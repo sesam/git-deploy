@@ -130,5 +130,16 @@ Extra commands
 * `git deploy upload <files>` - Copy local files to the remote app
 
 
+Upgrading
+---------
+
+After upgrading the git-deploy gem, you most likely also want to upgrade the hooks on your server. Do that with `git deploy hooks`
+
+Best practices
+--------------
+
+* Make use of ssh_config and passwordless auth, maybe also ForwardAgent
+
+* Run deploy setup with the -r option and avoid overwriting the wrong folders
 
   [heroku]: http://heroku.com/
